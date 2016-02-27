@@ -1,0 +1,15 @@
+<!--suppress ALL -->
+<nav ng-controller="NavBarCtrl" class="w3-container" layout="row" layout-sm="column" layout-align="end center">
+    <section class="w3-container w3-half">
+        <span>
+	    <img class="w3-image" src="assets/img/bpfLogo.png" alt="Black Philanthropy Fund" />
+        </span>
+    </section>
+    <section class="w3-container w3-half">
+        <div class="w3-container w3-right">
+            <md-button id="homeButton" ng-href="#/home" ng-class="{'active': isActive('/home')}" class="md-raised w3-quarter">Home</md-button>
+            <md-button id="aboutButton" ng-href="#/about" ng-class="{'active': isActive('/about')}" class="md-raised w3-quarter">About</md-button>
+            <md-button id="contactButton" ng-href="#/contact" ng-class="{'active': isActive('/contact')}" class="md-raised w3-quarter">Contact Us</md-button>
+        </div>
+    </section>
+</nav>

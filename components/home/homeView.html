@@ -1,0 +1,80 @@
+<div id="homeView" class="md-body-1 w3-container" ng-controller="HomeCtrl">
+    <section id="slideShow" hide-md hide-sm>
+        <img flex ng-repeat="item in slideshow" class="cssFade w3-image w3-card-2" ng-src="{{item.image}}" alt="{{item.alt}}" ng-show="i == $index" />
+    </section>
+    <section class="md-caption w3-margin-4" layout="row" layout-align="center start" layout-wrap>
+        <article class="md-whiteframe-1dp w3-container w3-quarter">
+            <h2 flex class="md-headline">Commitment</h2>
+            <section flex>
+                <img class="w3-image" src="assets/img/baby-held.jpg" />
+            </section>
+            <p flex>
+                The Black Philanthropy Fund (BPF) is committed to making a difference in the educational achievement and opportunities of black and disadvantaged children.
+                We regard ourselves as <i>a learning and leadership community</i> that works together, and engages others, in an ongoing process of learning and strategic action to achieve this goal.
+            </p>
+        </article>
+        <article class="md-whiteframe-1dp w3-container w3-quarter">
+            <h2 flex class="md-headline">Leadership & Learning Forums</h2>
+            <section flex>
+                <img class="w3-image" src="assets/img/key-to-success.jpg" />
+            </section>
+            <p flex>
+                We held five forums on education reform from November 2013 to May 2014 in pursuit of two key objectives.
+            </p>
+            <section flex>
+                <md-button ng-href="#/leadership" class="md-raised md-primary md-hue-2">More</md-button>
+            </section>
+        </article>
+        <article id="bostonBasics" class="md-whiteframe-1dp w3-container w3-quarter">
+            <section flex>
+                <h2>
+                    <img ng-click="showDialog($event)" src="assets/img/bbLogo.png" alt="The Boston Basics" title="Click here for an overview of the Boston Basics" />
+                </h2>
+                <h4><i>Click the logo above for an overview of the Boston Basics</i></h4>
+            </section>
+            <section flex>
+                <ol>
+                    <li>Maximize Love, Manage Stress</li>
+                    <li>Talk, Sing, and Point</li>
+                    <li>Count, Group, and Compare</li>
+                    <li>Explore Through Movement and Play</li>
+                    <li>Read and Discuss Stories</li>
+                </ol>
+            </section>
+            <section flex>
+                <md-button ng-href="#/bostonbasics" class="md-raised md-primary md-hue-2">More</md-button>
+                <h4>Click the 'more' button to view the Boston Basics videos!</h4>
+            </section>
+        </article>
+        <article id="parenting" class="md-whiteframe-1dp w3-half w3-container">
+            <h2 flex class="md-headline">The Boston Basics Campaign</h2>
+            <p flex flex-sm="100">
+                The BPF's major initiative of 2015 has been the development and launching of the Boston Basics Campaign.
+                The Campaign is a citywide effort aimed at equipping parents and caregivers of children aged 0-3
+                with a simple but effective set of five research-based tools that they can use to prepare their
+                kids for high achievement in school. The Basics were developed by Dr. Ron Ferguson of Harvard's Achievement Gap
+                Initiative (AGI). Research by the AGI shows that the achievement gap is firmly established before children
+                even reach school. So, investing in improving the quality of our schools
+                is important and necessary, but it is <i>not sufficient</i> to eliminate the achievement gap. The Boston Basics
+                exploits this new understanding of the origins of achievement deficits; it focuses on the great opportunity
+                engaged parents of infants and toddlers have by providing them with five simple, easy to use approaches
+                to accelerating cognitive and emotional development. It's an affirmative investment, putting parents and caregivers
+                in position to powerfully affect the foundations of learning and high achievement.
+            <section flex>
+                <md-button ng-href="#/parenting" class="md-raised md-primary md-hue-2">More</md-button>
+            </section>
+        </article>
+        <article id="news" class="md-whiteframe-1dp w3-quarter w3-container">
+            <h2 class="md-headline">News</h2>
+            <md-content flex layout-padding>
+                <md-list>
+                    <md-list-item class="md-long-text" ng-repeat="item in news">
+                        <div class="md-list-item-text" layout="column">
+                            <p>{{item.eventName}}</p>
+                        </div>
+                    </md-list-item>
+                </md-list>
+            </md-content>
+        </article>
+    </section>
+</div>

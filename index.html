@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Black Philanthropy Fund</title>
+
+    <!-- Angular Material CSS now available via Google CDN; version 0.11.2 used here -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
+
+    <!-- Site-specific styling -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/w3.css">
+</head>
+<body ng-app="bpfApp">
+    <div id="appContainer" class="md-whiteframe-4dp">
+        <div ng-include="'shared/navbar/navbarView.html'"></div>
+        <div id="view" ng-view class="w3-container w3-margin-4"></div>
+        <div ng-include="'shared/footer/footerView.html'"></div>
+    </div>
+
+    <!-- jQuery dependencies -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Angular dependencies -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-aria.min.js"></script>
+
+    <!-- Angular Material Javascript now available via Google CDN; version 0.11.2 used here -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.js"></script>
+
+    <!-- App-specific Controllers -->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="components/home/homeController.js"></script>
+    <script type="text/javascript" src="components/about/aboutController.js"></script>
+    <script type="text/javascript" src="components/contact/contactController.js"></script>
+    <script type="text/javascript" src="components/leadership/leadershipController.js"></script>
+    <script type="text/javascript" src="components/bostonbasics/bostonbasicsController.js"></script>
+    <script type="text/javascript" src="shared/navbar/navbarController.js"></script>
+</body>
+</html>

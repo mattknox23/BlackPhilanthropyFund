@@ -1,0 +1,192 @@
+/* General global styling */
+body {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    max-width: 100%;
+    width: 100%;
+    min-width: 350px;
+}
+
+article {
+    border: 1px solid #9abdd3;
+    padding: 0.01em 16px;
+    margin: 4px;
+}
+
+    article ol {
+        text-align: left;
+    }
+
+    article li {
+        margin-bottom: 10px;
+    }
+
+nav {
+}
+
+    nav .md-raised {
+        min-width: 130px;
+    }
+
+#appContainer {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#view {
+    background-color: #fff;
+}
+    #view md-list-item {
+        border-bottom: 1px solid #333;
+    }
+
+.active {
+    background-color: rgb(21,101,192) !important;
+    color: #fff !important;
+}
+
+/* Typography */
+.blueText {
+    color: #4b7fa8 !important;
+}
+
+.md-caption {
+    font-size: 13px;
+}
+
+/* View-specific styling */
+#homeView {}
+
+    #homeView article {
+        text-align: center;
+        min-height: 455px;
+        min-width: 350px;
+    }
+
+    #homeView article h2 {
+        text-align: center;
+    }
+
+    #homeView article p {
+        text-align: left;
+    }
+
+    #homeView #slideShow {
+        position: relative;
+        min-height: 550px;
+    }
+
+    #homeView #slideShow img {
+        position: absolute;
+        left: 6%;
+    }
+
+    #homeView #bostonBasics img {
+        cursor: pointer;
+    }
+
+    #homeView #news h2 {
+    margin-bottom: 0;
+    }
+
+    #homeView #news md-content {
+        max-height: 370px;
+    }
+
+    #homeView #news p {
+        max-width: 275px;
+    }
+
+    #homeView #parenting {
+        flex: 0 0 63%;
+        max-width: 63%;
+    }
+
+#aboutView #trustees h3 {
+    text-align: center;
+}
+
+    #aboutView #trustees section {
+        padding: 5px 0;
+    }
+
+#parentingView article, #bostonBasicsView article {
+    text-align: left;
+}
+
+#leadershipView {
+}
+
+    #leadershipView #panelists section {
+        margin-bottom: 10px;
+    }
+
+    #leadershipView ul {
+        max-width: 70%;
+    }
+
+    #leadershipView ul li {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #4b7fa8;
+    }
+
+#bostonBasicsView {
+}
+
+    #bostonBasicsView #bubbles img {
+        border: none;
+        cursor: pointer;
+    }
+
+    #bostonBasicsView #bubbles span {
+        width: 16%;
+        display: inline-block;
+    }
+
+/* Slide show Animations  */
+.cssFade {
+    transition: 0.5s linear all;
+    opacity: 1;
+}
+.cssFade.ng-hide {
+    opacity: 0;
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -ms-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+}
+
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 736px) {
+    #slideShow {
+    display: none;
+    }
+
+    #view {
+        margin: 0;
+    }
+
+    #homeView #parenting {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    nav {
+        min-height: 280px;
+    }
+
+    #homeView article {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        min-width: 100px;
+    }
+
+    #bostonBasicsView #bubbles span {
+        width: 25%;
+    }
+}

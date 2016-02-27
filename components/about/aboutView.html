@@ -1,0 +1,81 @@
+<section id="aboutView" ng-controller="AboutCtrl" class="md-body-1 w3-container">
+    <section class="w3-twothird">
+        <article class="md-whiteframe-1dp">
+            <h2>Our Mission</h2>
+            <p>
+                The Mission of the Black Philanthropy Fund (BPF) is to further enhance the tradition of African-American
+                philanthropy in Boston, with a focus on increasing the magnitude and effectiveness of giving to the black
+                community.  We will create a network that links black people of means, influence and skills with community
+                organizations in ways that enhance our collective impact on improving conditions&#8212;especially for our children.
+            </p>
+            <p>
+                We will select partners whose missions and integrity we believe in, and offer a range of supports
+                (customized for them, and designed with them) to help them realize their potentials for positive impact.
+                Our posture toward our partners will be one of respect&#8212;we will always be respectful of the knowledge
+                and commitment embodied in their work; and by our actions we will strive to win their respect for our intentions
+                and the quality of our support.
+            </p>
+            <p>
+                We will work to consolidate local Black wealth and expertise, and invest them to support constructive growth
+                in Boston's Black communities, and to mitigate distress and disparity.  We will do this by:
+                <ul class="blueText">
+                    <li>
+                        Investing the financial assets, social capital and influence of the BPF in effective organizations,
+                        direct community action, emerging leadership, and strategies to reduce income inequality;
+                    </li>
+                    <li>
+                        Leveraging our leadership status as involved, contributing African-Americans to influence the broader
+                        philanthropic community toward more effective support of educational, social, economic and political
+                        initiatives that show promise of positive impact;
+                    </li>
+                    <li>
+                        Promoting effective approaches to measure impact, identify best practices, and offer deserved recognition
+                        of all who accept the responsibility to generate positive change.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                In all this work, our driving impulse is service to the people and communities with whom we most strongly identify.
+            </p>
+        </article>
+        <article class="md-whiteframe-1dp">
+            <h2>Governance and Financial Management</h2>
+            <p>
+                The Black Philanthropy Fund is a not-for-profit corporation organized in the
+                Commonwealth of Massachusetts. It is governed by a Board of Trustees, which
+                currently numbers nine (see right). Trustees are elected annually and each
+                commits to active personal engagement in the activities of BPF and to an annual
+                financial contribution as a condition of eligibility for re-election to the board.  The board
+                is responsible for active pursuit of BPF's mission, the setting of strategic direction, fund
+                raising and grant making, financial management and reporting, and active engagement
+                with the community, partner institutions, and contributors.
+            </p>
+            <p>
+                To ensure the proper and professional management, security, and governance oversight
+                of contributions and other financial resources, the BPF established a Donor Advised
+                Fund at The Boston Foundation which receives and independently reports upon the
+                status of all contributions and disbursements from the fund. All disbursements must be
+                authorized by BPF's Board of Trustees.
+            </p>
+            <p>
+                All contributions should be made out to "The Black Philanthropy Fund (4635)" and
+                mailed to the attention of The Boston Foundation, 75 Arlington St, 10th Floor, Boston,
+                MA 02116.
+            </p>
+        </article>
+    </section>
+    <section class="w3-third">
+        <article class="md-whiteframe-1dp" hide-sm>
+            <section class="w3-container">
+                <img src="assets/img/handshake.jpg" alt="a firm handshake" class="w3-image" />
+            </section>
+        </article>
+        <article id="trustees" class="md-whiteframe-1dp w3-container">
+            <h3 flex>The Black Philanthropy Fund's Board of Trustees<br> Founded: 2012</h3>
+            <section flex ng-repeat="person in trustees">
+                <span><b>{{person.name}},</b></span>
+                <span class="blueText">{{person.title}}</span>
+            </section>
+        </article>
+    </section>
+</section>

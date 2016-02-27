@@ -1,0 +1,55 @@
+<div id="leadershipView" ng-controller="LeadershipCtrl" class="w3-container">
+    <article class="md-whiteframe-1dp md-body-1 w3-container w3-padding-4">
+        <section>
+            <section class="w3-twothird">
+                <h3>Leadership and Learning Forums (continued)</h3>
+                <p>
+                <h4>Objectives:</h4>
+                <ol>
+                    <li>
+                        Gain deeper understanding about the landscape of education reform in Boston and the Commonwealth
+                        in order to inform our investment strategy for improving the education of black and disadvantaged children.
+                    </li>
+                    <li>
+                        Outreach to a broader audience to build a learning and leadership community that works together to help make this happen.
+                    </li>
+                </ol>
+                </p>
+                <p>
+                    The forums were designed to build shared understanding of the patterns of black children's achievement
+                    over time, how those patterns compare to the achievement of other racial groups in Boston and across the
+                    country; and, equally important, what works and what's needed to strengthen and accelerate the achievement of our children.
+                </p>
+                <p>
+                    They were organized as panel discussions, and included:
+                <ul class="blueText">
+                    <li>Experts who know the data on education reform in Boston, the state, and the nation.</li>
+                    <li>Scholars and practitioners knowledgeable about what is effective and needed regarding the education and development of black children.</li>
+                    <li>Principals from improving schools already breaking new ground in achievement.</li>
+                    <li>Funders and practitioners discussing what is needed to cut through the district vs. charter school gridlock.</li>
+                    <li>State education leaders discussing the role of policy makers in addressing proficiency gaps among our youth.</li>
+                </ul>
+                </p>
+                <p>
+                    Our forums were very successful. Each was attended by a diverse audience of 30-50 community members,
+                    including parents and community activists; educators, including teachers, principals and the school
+                    superintendents from Boston and Framingham; candidates in Boston's 2013 mayoral election; faith leaders,
+                    business leaders, and foundation executives; and education policy makers from Boston and the Commonwealth.
+                    These audiences were engaged, and they generated recommendations to help BPF develop a plan of action.
+                </p>
+            </section>
+            <section class="w3-third w3-center">
+                <section hide-sm>
+                    <img src="assets/img/business-presentation.jpg" alt="strong leadership" class="w3-image">
+                </section>
+                <article id="panelists" class="md-whiteframe-1dp w3-left-align">
+                    <h4>Our Leadership and Learning Forums Panelists Included:</h4>
+                    <section ng-repeat="person in panelists">
+                        <span><b>{{person.name}},</b></span>
+                        <span class="blueText">{{person.title}}</span>
+                    </section>
+                </article>
+            </section>
+        </section>
+    </article>
+</div>
