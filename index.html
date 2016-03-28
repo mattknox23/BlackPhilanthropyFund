@@ -20,16 +20,12 @@
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-74245045-2', 'auto');
-        ga('send', 'pageview');
-
     </script>
 </head>
 <body ng-app="bpfApp">
     <div id="appContainer" class="md-whiteframe-4dp">
         <div ng-include="'shared/navbar/navbarView.html'"></div>
-        <div id="view" ng-view class="w3-container w3-margin-4"></div>
+        <div id="view" ui-view class="w3-container w3-margin-4"></div>
         <div ng-include="'shared/footer/footerView.html'"></div>
     </div>
 
@@ -42,6 +38,8 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-aria.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js
+    "></script>
 
     <!-- Angular Material Javascript now available via Google CDN; version 0.11.2 used here -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.js"></script>
